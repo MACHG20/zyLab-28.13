@@ -4,27 +4,32 @@ using namespace std;
 #include "ItemToPurchase.h"
 
 int main() {
-   ItemPurchase-> item1, item2;
-   for (int i=0; i<2; i++){
-   if (i =0){
-   cout << "item " << i << endl;
+   ItemToPurchase item1, item2;
+   string name;
+   int price, quantity;
+  
+   cout << "item 1"<< endl;
    cout << "Enter the item name: " << endl;
-   cin >> item1.name;
+   cin >> name;
+   item1.SetName(name);
    cout << "Enter the item price: "<< endl;
-   cin >> item1.price;
+   cin >> price;
+   item1.SetPrice(price);
    cout << "Enter the item quantity: " << endl;
-   cin >> item1.quantity;
-   }
-   if (i =1){
-   cout << "item " << i << endl;
+   cin >> quantity;
+   item1.SetQuantity(quantity);
+   
+   cout << "item 2"<< endl;
    cout << "Enter the item name: " << endl;
-   cin >> item2.name;
+   cin >> name;
+   item2.SetName(name);
    cout << "Enter the item price: "<< endl;
-   cin >> item2.price;
+   cin >> price;
+   item2.SetPrice(price);
    cout << "Enter the item quantity: " << endl;
-   cin >> item2.quantity;
-   }
-   }
+   cin >> quantity;
+   item2.SetQuantity(quantity);
+   
    
    return 0;
 }
