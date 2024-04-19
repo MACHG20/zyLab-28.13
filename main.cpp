@@ -4,7 +4,7 @@ using namespace std;
 #include "ItemToPurchase.h"
 
 int main() {
-   ItemPurchase-> item1, item2;
+   ItemToPurchase-> item1, item2;
    for (int i=0; i<2; i++){
    if (i =0){
    cout << "item " << i << endl;
