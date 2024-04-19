@@ -3,30 +3,42 @@ using namespace std;
 
 #include "ItemToPurchase.h"
 
-class ItemToPurchase{
-  public:
-  ItemToPurchase();
-  void SetName(string name){
-    this->name = name;
-  }
-  void SetPrice(int price){
-    this->price = price;
-  }
-  void SetQuantity(int quantity){
-    this->quantity = quantity;
-  }
+   ItemToPurchase::ItemToPurchase(){
+      itemName = "";
+      itemPrice = 0;
+      itemQuantity = 0;
+   }
 
-  string GetName(){
-    return name;
-  }
-  int GetPrice(){
-    return price;
-  }
-  int GetQuantity(){
-    return quantity;
-  }
+   void SetName(string name){
+      itemName = name;
+   }
 
-  void Print(item){
+   void SetPrice(int price){
+      itemPrice = price;
+   }
+
+   void SetQuantity(int quantity){
+      itemQuantity = quantity;
+   }
+
+   string GetName(){
+      return itemName;
+   }
+  
+   int GetPrice(){
+      return itemPrice;
+   }
+  
+   int GetQuantity(){
+      return itemQuantity;
+   }
+
+  void ItemToPuchase::Print(ItemToPurchase item1, ItemToPurchase item2) {
+      cout << "TOTAL COST" << endl;
+      item1.Print();
+      item2.Print();
+      int totalCost = (item1.GetPrice() * item1.GetQuantity()) + (item2.GetPrice() * item2.GetQuantity());
+      cout << "Total: $" << totalCost << endl;
+   }
+
 };
-
-/* Type your code here */
