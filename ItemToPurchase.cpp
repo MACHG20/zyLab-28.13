@@ -9,36 +9,31 @@ using namespace std;
       itemQuantity = 0;
    }
 
-   void SetName(string name){
+   void ItemToPurchase::SetName(string name){
       itemName = name;
    }
 
-   void SetPrice(int price){
+   void ItemToPurchase::SetPrice(int price){
       itemPrice = price;
    }
 
-   void SetQuantity(int quantity){
+   void ItemToPurchase::SetQuantity(int quantity){
       itemQuantity = quantity;
    }
 
-   string GetName(){
+   string ItemToPurchase::GetName(){
       return itemName;
    }
   
-   int GetPrice(){
+   int ItemToPurchase::GetPrice(){
       return itemPrice;
    }
   
-   int GetQuantity(){
+   int ItemToPurchase::GetQuantity(){
       return itemQuantity;
    }
 
-  void ItemToPuchase::Print(ItemToPurchase item1, ItemToPurchase item2) {
-      cout << "TOTAL COST" << endl;
-      item1.Print();
-      item2.Print();
-      int totalCost = (item1.GetPrice() * item1.GetQuantity()) + (item2.GetPrice() * item2.GetQuantity());
-      cout << "Total: $" << totalCost << endl;
+  void ItemToPurchase::Print() {
+      
    }
 
-};
